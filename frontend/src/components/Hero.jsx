@@ -1,3 +1,4 @@
+import "../styles/hero.css";
 function Hero(){
     return(
         <section className="hero">
@@ -11,8 +12,12 @@ function Hero(){
                 </p>
 
                 <div className="hero-buttons">
-                    <button>Get Started</button>
-                    <button>Explore Mock Tests</button>
+                    <button className="primary-btn">
+                        Get Started
+                    </button>
+                    <button className="secondary-btn">
+                        Explore Mock Tests
+                    </button>
                 </div>
             </div>
         </section>

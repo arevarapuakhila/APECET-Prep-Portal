@@ -1,10 +1,12 @@
 import React from 'react'
 import FeatureCard from './FeatureCard'
+import "../styles/features.css";
 
 const Features = () => {
   return (
-    <section>
+    <section className="features">
         <h2>Why Choose Our Portal?</h2>
+        <div className="features-container">
         <FeatureCard 
         icon="📚"
         title="Study Materials"
@@ -30,6 +32,7 @@ const Features = () => {
         title="Performance Analytics"
         description="Track your scores, accuracy, and improvement after every mock test."
         />
+        </div>
     </section>
   )
 }

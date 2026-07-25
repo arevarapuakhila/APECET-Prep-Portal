@@ -1,0 +1,15 @@
+.branches{
+    padding: 80px 20px;
+
+}
+.branches h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+.branches-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}

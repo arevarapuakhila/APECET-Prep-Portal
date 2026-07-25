@@ -1,11 +1,13 @@
 import React from 'react'
 import BranchCard from './BranchCard'
+import "../styles/branches.css"
 const Branches = () => {
   return (
-    <section>
+    <section className="branches">
         <h2>
             Available Branches
         </h2>
+        <div className="branches-container">
         <BranchCard 
         icon="💻"
         BranchName="Computer Science Engineering"
@@ -26,7 +28,7 @@ const Branches = () => {
         icon="🏗️"
         BranchName="Civil Engineering"
         />
-
+      </div>
     </section>
   )
 }
