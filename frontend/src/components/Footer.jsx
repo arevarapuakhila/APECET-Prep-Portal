@@ -1,6 +1,8 @@
+import "../styles/footer.css"
 function Footer() {
     return(
-        <footer>
+        <footer className="footer">
+     <div className="footer-container">       
             <div className="footer-info">
                 <h3>AP ECET Preparation Portal</h3>
                 <p>
@@ -8,15 +10,15 @@ function Footer() {
                     study materials, mock tests, and AI-powered learning
                 </p>
             </div>
-            <div className="quickLinks">
+            <div className="quick-links">
                 <h3>
                     Quick Links
                 </h3>
                 <ul>
-                    <li>About</li>
-                    <li>Resources</li>
-                    <li>Mock Tests</li>
-                    <li>Contact</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Mock Tests</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div className="policies">
@@ -31,7 +33,9 @@ function Footer() {
                     </li>
                 </ul>
             </div>
-            <div className="copyrights">
+    </div>
+
+            <div className="copyright">
             <p>
                 © 2026 AP ECET Preparation Portal.
                 All Rights Reserved.

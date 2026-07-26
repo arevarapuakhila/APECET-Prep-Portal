@@ -1,7 +1,9 @@
+import "../styles/cta.css"
 //CTA means Call to Action,this section encourages users to take the next step
+
 function CTA(){
     return( 
-    <section>
+    <section className="cta">
     <div className="cta-content">
     <h2>Ready to crack AP ECET 2027?</h2>
     <p>
