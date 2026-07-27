@@ -13,3 +13,27 @@
     justify-content: center;
     gap: 30px;
 }
+/*--tablet--*/
+@media (max-width: 768px){
+    .branches{
+        padding: 60px 20px;
+    }
+    .branches h2{
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+}
+/*--mobile---*/
+@media (max-width: 480px)
+{
+    .branches{
+        padding: 50px 15px;
+    }
+    .branches h2{
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+    .branches-container{
+        gap: 20px;
+    }
+}

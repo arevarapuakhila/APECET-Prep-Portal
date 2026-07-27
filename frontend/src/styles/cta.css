@@ -6,12 +6,44 @@
 .cta-content{
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
+}
+/* tablet */
+@media (max-width: 768px)
+{
+   .cta-content h2{
+      font-size: 1.6rem;
+   }
+   .cta-content p{
+      font-size: 1.1rem;
+   }
+   .cta-buttons {
+      gap: 15px;
+   }
+}
+/*---mobile esponsive --*/
+@media (max-width: 480px)
+{
+   .cta-content h2{
+      font-size: 1.5rem;
+   }
+   .cta-content p {
+      font-size: 1rem;
+   }
+   .cta-buttons{
+      flex-direction: column;
+      gap: 15px;
+      align-items: center; /* centers button horizontally */
+   }
+   .cta-buttons button {
+      width: 200px; /*makes bothbuttons equal width */
+   }
 }
 .cta-content h2{
       font-size: 2rem;
      font-weight: 500;
      margin-bottom: 30px;
-     text-align:center;
+    
 }
 .cta-content p{
     font-size: 1.2rem;
@@ -22,6 +54,7 @@
  .cta-buttons {
     display:flex;
     justify-content:center;
+    gap: 20px;
   
  }
  .cta-buttons button:hover{
@@ -33,6 +66,6 @@
     border: none;
     padding: 12px 24px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     border-radius: 12px;
  }

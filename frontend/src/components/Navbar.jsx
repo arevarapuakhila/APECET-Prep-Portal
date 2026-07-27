@@ -2,7 +2,7 @@ import  "../styles/navbar.css"
 function Navbar() {
     return (
         <nav className="navbar">
-          
+                <div className="nav-container">
                  <div className="logo">
                       <h2>AP ECET Portal</h2>
                 </div>
@@ -15,7 +15,7 @@ function Navbar() {
                 <button className="login-btn">
                  Login
                 </button>
-        
+            </div>
         </nav>
     );
     

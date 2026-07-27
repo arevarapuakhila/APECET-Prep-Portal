@@ -12,3 +12,28 @@
     justify-content: center;
     gap: 30px;
 }
+@media (max-width: 768px){
+    .features{
+       padding: 60px 20px;
+    }
+    .features h2{
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    .features-container{
+        gap: 25px;
+    }                                  
+}
+/*--mobile--*/
+@media (max-width: 480px){
+    .features {
+        padding: 50px 15px;
+    }
+    .features h2{
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+    .features-container{
+        gap: 20px;
+    }
+}

@@ -5,10 +5,23 @@
 }
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+}
+@media (max-width: 768px){
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px)
+{
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
 }
 .footer-info h3{
     font-size: 1.5rem;
@@ -24,8 +37,16 @@
 }
 .quick-links li , .policies li {
     margin-bottom: 12px;
+    line-height: 1.5;
 }
 .quick-links h3 , .policies h3{
     margin-bottom: 15px;
+}
+.quick-links a, .policies a{
+    color: #cbd5e1;
+    text-decoration: none;
+}
+.quick-links a:hover,.policies a:hover{
+    color:white;
 }
 
