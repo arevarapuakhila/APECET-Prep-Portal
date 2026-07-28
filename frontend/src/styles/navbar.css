@@ -16,11 +16,12 @@
 .logo h2{
     color: var(--primary-color);
     font-size: 1.8rem;
+    margin-right: 60px;
 }
 .nav-links{
-    display: flex;
+    display: flex; 
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
     margin: 0;
     padding:0;
@@ -42,7 +43,62 @@
     border-radius: 15px;
     cursor: pointer;
     transition: transform .3s ease;
+    margin-left: 25px;
 }
 .login-btn:hover{
   transform: translateY(-2px);
+}
+/*--Tablet View --*/
+@media (max-width: 768px){
+    .nav-container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .logo h2{
+        margin-right:0;
+        font-size: 1.6rem;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .login-btn{
+        margin-left: 0;
+        width: 150px;
+    }
+}
+/*--mobile View --*/
+@media (max-width: 480px){
+    .navbar{
+        padding: 15px 0;
+    }
+    .nav-container{
+        padding: 0 15px;
+        gap: 12px;
+    }
+    .logo h2{
+        font-size: 1.4rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links a{
+        font-size: 1rem;
+    }
+    .login-btn{
+        width: 100%;
+        max-width: 200px;
+        padding: 12px;
+        margin: 0 auto;
+        display: block;
+   
+    }
+}
+.active{
+    color: var(--primary-color);
+    font-weight: bold;
 }
