@@ -21,3 +21,44 @@
     border-color: #4682B4;
     box-shadow: 0 0 5px rgba(70, 130 , 180, 0.3);
 }
+.input-wrapper {
+    position: relative;
+}
+.input-wrapper input{
+    width: 100%;
+    padding: 12px 45px 12px 12px;
+    font-size: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.input-wrapper input:focus{
+    border-color: #4682B4;
+    box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.15);
+}
+.toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: #6C757D;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+
+}
+.toggle-password:hover{
+    color: #4682B4;
+}
+.toggle-password:focus{
+    outline: none;
+}
